@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Invoice</title>
+	<title>Quotation</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
 <body>
