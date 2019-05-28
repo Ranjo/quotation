@@ -11,10 +11,10 @@
 </div>
 <div class="rows">
 <div class="col-xs-3">
-Refference: TT/0223/2019
+	<label>Refference:</label> TT/0223/2019
 </div>
 <div class="col-xs-3">
-	Quotation number: 1
+	<label>Quotation number:</label> 1
 	</div>
 	<div class="col-xs-3">
 	Date:<?php echo date("d/m/Y"); ?>
