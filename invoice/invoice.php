@@ -3,11 +3,16 @@
 <head>
 	<title>Quotation</title>
 </head>
-<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<?php 
+$quantity =$_POST['qty'];
+$amount =$_POST['amt'];
+$total = $quantity*$amount
+?>
 <body>
 <div class="container">
 <div class="container">
-	to:<br> <textarea class="col-md-5 form-group"></textarea>
+	To:<br> <textarea class="col-md-5 form-group form-control"></textarea>
 </div>
 <div class="rows">
 <div class="col-xs-3">
@@ -38,35 +43,12 @@
 <tr>
 <td>1</td>
 <td><input type="textarea" name="descrip"></td>
-	<td>5</td>
-	<td>1000</td>
-	<td>50000</td>
+	<td><input type="text" name="qty"></td>
+	<td><input type="text" name="amt"></td>
+	<td><?php echo $total; ?></td>
 	
 </tr>
-<tr>
-<td>1</td>
-<td><input type="textarea" name="descrip"></td>
-	<td>5</td>
-	<td>1000</td>
-	<td>50000</td>
-	
-</tr>
-<tr>
-<td>1</td>
-<td><input type="textarea" name="descrip"></td>
-	<td>5</td>
-	<td>1000</td>
-	<td>50000</td>
-	
-</tr>
-<tr>
-<td>1</td>
-<td><input type="textarea" name="descrip"></td>
-	<td>5</td>
-	<td>1000</td>
-	<td>50000</td>
-	
-</tr>
+
 </tbody>
 <tfoot >
 
@@ -90,7 +72,7 @@ Served by:</div><div class="col-xs-6"> Tony</div>
 <div class="col-xs-6">
 Date: </div>
  <div class="col-xs-6">
- 22nd Feb 2019
+ <?php echo date("d/m/Y"); ?>
 </div>
 
 <div class="rows">
